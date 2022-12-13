@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.about {
+  background-color: #3c3a53;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.aboutMe {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.aboutMe > h3 {
+  font-weight: 500;
+}
+.aboutMe > h1 {
+  text-align: center;
+  color: #5fabcc;
+}
+.aboutMe span {
+  color: #5fabcc;
+  font-weight: bold;
+}
+.aboutMe > ul {
+  list-style: none;
+}
+.aboutMe > ul > li {
+  margin: 10px 0;
+  font-size: large;
+}
+.skills {
+  background-color: white;
+  width: 100%;
+  color: #3c3a53;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  height: 40vh;
+}
+.skills > h1 {
+  color: #5fabcc;
+}
+.skills-grid {
+  display: grid;
+  width: 60%;
+  grid-template-columns: repeat(auto-fill, 230px);
+  justify-content: center;
+}
+.skill {
+  background-color: #24223a;
+  width: 200px;
+  font-size: xx-large;
+  margin: 5px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 1s;
+}
+.skill::before {
+  content: "";
+  background-color: #5fabccaf;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.5s;
+}
+.skill:hover::before {
+  width: 100%;
+}
+.skill:hover {
+  transform: scale(1.1);
+}
+.educ-exp {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 20px 0;
+}
+.educ-exp-inner {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.education,
+.experience {
+  width: 40%;
+  height: 60vh;
+  background-color: #24223a;
+  border-radius: 25px;
+}
+.education > h2,
+.experience > h2 {
+  text-align: center;
+  color: #5fabcc;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.educ-contents,
+.exp-contents {
+  margin: 5px 20px;
+  border-left: 1px solid #5fabcc;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  height: 75%;
+}
+.school::before,
+.job::before {
+  content: "";
+  background-color: #5fabcc;
+  width: 10px;
+  height: 10px;
+  display: block;
+  /* border-radius: 50%; */
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  transform: translate(-50%, -50%);
+}
+.school,
+.job {
+  position: relative;
+}
+.educ-content > p,
+.exp-content > p {
+  margin-left: 10px;
+}

@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.project-container {
+  background-color: #3c3a53;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 92vh;
+}
+.project-container > h1 {
+  flex-basis: 10%;
+  color: #5fabcc;
+  margin: 20px 0;
+}
+
+.project-grid {
+  flex-basis: 85%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 20px;
+}
+.project {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  border-radius: 25px;
+}
+.project img {
+  min-width: 400px;
+  max-width: 100%;
+  border-radius: 25px;
+}
+@media screen and (max-width: 1000px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+#miniproject1,
+#miniproject2,
+#miniproject3,
+#portfolio1,
+#digitalClock {
+  position: relative;
+}
+#miniproject1 > .overlay,
+#miniproject2 > .overlay,
+#miniproject3 > .overlay,
+#portfolio1 > .overlay,
+#digitalClock > .overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background: linear-gradient(rgba(255, 255, 255, 0.886), #5fabcc 60%);
+  border-radius: 25px;
+  width: 100%;
+  height: 0%;
+  left: 0%;
+  overflow: hidden;
+  bottom: 0%;
+  padding: 0 20%;
+  text-align: center;
+  transition: height 0.5s;
+}
+#miniproject1:hover > .overlay,
+#miniproject2:hover > .overlay,
+#miniproject3:hover > .overlay,
+#portfolio1:hover > .overlay,
+#digitalClock:hover > .overlay {
+  height: 100%;
+}
+
+#miniproject1 > .overlay > p,
+#miniproject1 > .overlay > h2 {
+  color: #3c3a53;
+  margin-bottom: 20px;
+}
+#miniproject2 > .overlay > p,
+#miniproject2 > .overlay > h2 {
+  color: #3c3a53;
+  margin-bottom: 20px;
+}
+#miniproject3 > .overlay > p,
+#miniproject3 > .overlay > h2 {
+  color: #3c3a53;
+  margin-bottom: 20px;
+}
+#portfolio1 > .overlay > p,
+#portfolio1 > .overlay > h2 {
+  color: #3c3a53;
+  margin-bottom: 20px;
+}
+#digitalClock > .overlay > p,
+#digitalClock > .overlay > h2 {
+  color: #3c3a53;
+  margin-bottom: 20px;
+}
