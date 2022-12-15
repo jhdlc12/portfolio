@@ -21,7 +21,10 @@ const Project = () => {
               Used HTML, CSS and Bootsrap.
             </p>
             <div style={{ transform: "scale(2)" }}>
-              <a href="https://jhdlc12.github.io/portfolio1/" target="_blank">
+              <a
+                href="https://jhdlc12.github.io/mini_project1.github.io/"
+                target="_blank"
+              >
                 <i class="bi bi-github" style={{ color: "#3c3a53" }}></i>
               </a>
             </div>
@@ -38,7 +41,10 @@ const Project = () => {
             </p>
 
             <div style={{ transform: "scale(2)" }}>
-              <a href="https://jhdlc12.github.io/portfolio1/" target="_blank">
+              <a
+                href="https://kyuru2425.github.io/helloWork.github.io/"
+                target="_blank"
+              >
                 <i class="bi bi-github" style={{ color: "#3c3a53" }}></i>
               </a>
             </div>
@@ -55,7 +61,10 @@ const Project = () => {
             </p>
 
             <div style={{ transform: "scale(2)" }}>
-              <a href="https://jhdlc12.github.io/portfolio1/" target="_blank">
+              <a
+                href="https://github.com/kyuru2425/retrofantasy"
+                target="_blank"
+              >
                 <i class="bi bi-github" style={{ color: "#3c3a53" }}></i>
               </a>
             </div>
@@ -88,7 +97,7 @@ const Project = () => {
             </p>
 
             <div style={{ transform: "scale(2)" }}>
-              <a href="https://jhdlc12.github.io/portfolio1/" target="_blank">
+              <a href="https://jhdlc12.github.io/digitalclock/" target="_blank">
                 <i className="bi bi-github" style={{ color: "#3c3a53" }}></i>
               </a>
             </div>
