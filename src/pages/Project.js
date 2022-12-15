@@ -16,7 +16,7 @@ const Project = () => {
           <div className="overlay">
             <h2>Mini Project 1</h2>
             <p>My first Project in KodeGo</p>
-            <p>
+            <p className="description">
               An e-magazine about some tourist destination in the Philippines.
               Used HTML, CSS and Bootsrap.
             </p>
@@ -32,7 +32,7 @@ const Project = () => {
           <div className="overlay">
             <h2>Mini Project 2</h2>
             <p>My Second Project in KodeGo</p>
-            <p>
+            <p className="description">
               An Job-hunting website for web developers. Used ReactJs, Bootstrap
               and the local storage
             </p>
@@ -49,7 +49,7 @@ const Project = () => {
           <div className="overlay">
             <h2>Mini Project 3</h2>
             <p>My Capstone Project in KodeGo</p>
-            <p>
+            <p className="description">
               An e-commerce Website that sells gaming consoles,games and
               accesories. Used HTML,CSS, JavaScript,Bootstarp, PHP and MySQL.
             </p>
@@ -66,7 +66,7 @@ const Project = () => {
           <div className="overlay">
             <h2>Portfolio 1</h2>
             <p>My First Portfolio</p>
-            <p>
+            <p className="description">
               My first portfolio used in my mini project 2. used HTML, CSS and
               javascript.
             </p>
@@ -83,11 +83,13 @@ const Project = () => {
           <div className="overlay">
             <h2>Simple Digital Clock</h2>
             <p>My Digital Clock</p>
-            <p>A practice project.Used HTML,CSS, JavaScript.</p>
+            <p className="description">
+              A practice project.Used HTML,CSS, JavaScript.
+            </p>
 
             <div style={{ transform: "scale(2)" }}>
               <a href="https://jhdlc12.github.io/portfolio1/" target="_blank">
-                <i class="bi bi-github" style={{ color: "#3c3a53" }}></i>
+                <i className="bi bi-github" style={{ color: "#3c3a53" }}></i>
               </a>
             </div>
           </div>

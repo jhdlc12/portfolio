@@ -56,6 +56,34 @@
   flex-direction: row;
   gap: 20px;
 }
+@media screen and (max-width: 800px) {
+  .fullName {
+    flex-direction: column;
+  }
+  .landing-page {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .landing-page {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .fullName {
+    transform: scale(0.75);
+    align-items: center;
+  }
+  .landing-page > h1 {
+    font-size: 40px;
+  }
+  .landing-page {
+    align-items: center;
+  }
+  .landing-page > h3 {
+    text-align: center;
+  }
+}
 
 /* -----------------line animation on the text name---------------------- */
 #lastName,

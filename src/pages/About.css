@@ -36,6 +36,17 @@
   margin: 10px 0;
   font-size: large;
 }
+.resume {
+  background-color: #5fabcc;
+  width: 150px;
+}
+.resume > a {
+  color: #24223a;
+  text-decoration: none;
+}
+.resume:hover {
+  background-color: white;
+}
 .skills {
   background-color: white;
   width: 100%;
@@ -46,6 +57,11 @@
   align-items: center;
   padding: 20px 0;
   height: 40vh;
+}
+@media screen and (max-width: 800px) {
+  .skills {
+    height: 100%;
+  }
 }
 .skills > h1 {
   color: #5fabcc;
@@ -95,6 +111,33 @@
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 1000px) {
+  .educ-exp-inner {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .educ-exp-inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .education,
+  .experience {
+    min-width: 60%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .aboutMe {
+    width: 90%;
+  }
+  .education,
+  .experience {
+    min-width: 90%;
+  }
+}
+
 .education,
 .experience {
   width: 40%;

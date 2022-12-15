@@ -27,6 +27,11 @@ const About = () => {
           <li>
             <span>CITY:</span> Tarlac City
           </li>
+          <li class="resume">
+            <a href="Resume.pdf" download>
+              Download CV
+            </a>
+          </li>
         </ul>
       </div>
       <div className="skills">
